@@ -1,0 +1,302 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+.main-banner{
+  background: linear-gradient(to top,rgba(10, 10, 10, 0.5)100%,rgba(10, 10, 10, 0.5)100%),url("/assets/images/student.jpg");
+  background-size: cover;
+  background-position: right 35% bottom 45%;
+  height: 100vh;
+  position: relative;
+}
+
+.logo{
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 5%;
+}
+
+.banner-text{
+  text-align: center;
+  color: white;
+  padding-top: 180px;
+  
+}
+.banner-text h1{
+  font-size: 80px;
+  font-family: 'Kaushan Script',cursive;
+  /* kaushan and poppin */
+}
+
+.banner-text p{
+  font-size: 20px;
+  font-style: italic;
+}
+
+.banner-btn{
+  margin: 70px auto ;
+}
+
+.banner-btn .show-btn{
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 12px 0;
+  color: white;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border: 1px solid #636DCE;
+  position: relative;
+  z-index: 1;
+  transition: color 0.5s;
+}
+
+.banner-btn .show-btn span{
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #636DCE;
+  z-index: -1;
+  transition: 0.5s;
+}
+.banner-btn .show-btn:hover span{
+  width: 100%;
+}
+
+/* Skillify web site banner */
+@media screen and (max-width:770px){
+  .banner-text h1{
+    font-size: 44px;
+  }
+
+  .banner-btn .show-btn{
+    display: block;
+    margin: 20px auto;
+  }
+  .logo{
+    width: 200px;
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    margin-top: 0px;
+  }
+}
+
+
+/*Skilify footer style section */
+.footer{
+  padding: 100px 0 20px;
+  background-color: #636ece59;;
+}
+
+.footer-img{
+  max-width: 400px;
+  opacity: 0.3;
+  position: absolute;
+  top:130%;
+  left: 35%;
+  /* transform: translate(-50%,-50%); */
+}
+
+.footer-logo{
+ max-width: 100px;
+  /* opacity: ; */
+  position: absolute;
+  top:105%;
+  left: 45%;
+}
+.title-text{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title-text h1{
+  color:black;
+  font-family: inherit;
+  font-family: 'Kaushan Script',cursive;
+}
+
+.footer-row{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left, .footer-right{
+  flex-basis: 45%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-right{
+  text-align: right;
+} 
+
+.footer-row h1{
+  margin:10px 0;
+}
+.footer-row p{
+  line-height: 35px;
+}
+
+.footer-left .fa, .footer-right .fa{
+  font-size: 20px;
+  color: black;
+  margin: 10px;
+}
+
+.social-links{
+    text-align: center;
+}
+
+.social-links .fa-brands{
+  height: 40px;
+  width:40px;
+  font-size: 20px;
+  line-height: 40px;
+  border: 1px solid #636DCE;;
+  margin: 40px 5px 0px ;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.fa-brands{
+  color: #636DCE;
+}
+
+.social-links .fa-brands:hover{
+background: #636DCE;;
+color:  black;
+transform: translateY(-5px);
+}
+
+.social-links p{
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+/* footer media */
+@media screen and (max-width:770px){
+  .footer-left, .footer-right{
+    flex-basis: 100%;
+    font-size: 14px;
+  }
+  .footer-img{
+    left: 25%;
+  }
+}
+
+
+
+/* Pop login effects */
+
+input[type="checkbox"]{
+  display: none;
+}
+
+#show:checked ~ .container{
+  display: block;
+}
+
+.container{
+  display: none;
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 9px;
+  background:white;
+  border: 1px white;
+
+}
+.container{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index:1;
+}
+.container .close-btn{
+  position: absolute;
+  color: white;
+  right: 20px;
+  top: 5px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.close-btn:hover{
+  color: red;
+}
+
+.container .welcome{
+  width: 400px;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: blueviolet;
+  /* z-index: 1; */
+}
+.welcome h4{
+  color: white;
+  margin: 15px;
+}
+
+form{
+  margin: 20px;
+  width: 370px;
+  position: absolute;
+  left:2%;
+  top: 15%;
+}
+
+input{
+  display: block;
+  width: 90%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #636DCE;
+  padding: 10px;
+  color: black;
+  margin-bottom:20px;
+  margin-top: 20px;
+}
+
+button{
+  display: block;
+  width: 90%;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background: linear-gradient(to right,blueviolet, #20002c);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: #20002c;
+
+}
+
+a:hover{
+  color: blueviolet;
+}
