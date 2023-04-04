@@ -1,0 +1,240 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* font-family: ; */
+}
+body{
+  background-image: linear-gradient(rgba(115, 116, 155, 0.8),rgba(115, 116, 155, 0.8)),url("/assets/images/teacher.jpg");
+  background-size: cover;
+  background-position: right 35% bottom 45%;
+  height: 100vh;
+  position: relative;
+}
+
+.container{
+  width: 400px;
+  height: 500px;
+  margin: 8% auto;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+h3{
+  text-align: center;
+  margin-bottom: 40px;
+  color: #777;
+}
+
+.container form{
+  width: 300px;
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  transition: 0.5s;
+}
+
+form input,select{
+  width: 100%;
+  padding: 10px 5px;
+  margin:5px;
+  border: 0;
+  border-bottom:1px solid#636DCE;
+  outline: none;
+}
+
+form input[redio]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+::placeholder{
+  color: #777;
+}
+
+.btn-box{
+  width: 100%;
+  margin: 30px auto;
+  /* margin-top: 60px; */
+  text-align: center;
+}
+
+.btn-box a{
+  text-decoration: none;
+  color: white;
+}
+
+form button{
+  width: 100px;
+  height: 35px;
+  margin: 4px auto;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: linear-gradient(to right,blueviolet, #20002c);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#form2{
+  left:450px;
+}
+
+#form3{
+  left: 450px;
+  /* overflow: scroll; */
+}
+
+.step-row{
+width: 100%;
+height: 40px;
+margin: 0 auto;
+display: flex;
+align-items: center;
+box-shadow: 0 -1px 5px -1px #0000;
+position: relative;
+}
+
+.step-col{
+  width: 120px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+}
+
+#progress{
+  position: absolute;
+  height: 100%;
+  width: 120px;
+  background: linear-gradient(to right,blueviolet, #20002c);
+  transition: 1s;
+}
+
+#progress::after{
+  content:'';
+  height:0;
+  width: 0;
+  border-top:20px solid transparent;
+  border-bottom:20px solid transparent;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  border-left: 20px solid #20002c;
+}
+
+
+/*   /*the Questios */
+.question {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.question input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.question:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.question input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.question input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.question .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+
+
+/* Cards for Displaying pictures */
+.cards{
+  margin: 0 auto;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:10px;
+}
+
+.cards{
+  box-shadow: 0 0 3px rgb(0, 0, 0,0.1);
+}
+
+.card_img{
+  width: 100%;
+  display: block;
+}
+
+.card_content{
+  display: block;
+  line-height: 1.5;
+  font-size: 0.9em;
+  padding-right: 5px;
+  background-color: #636ece77;
+  font-size: small;
+}
+
+.card_content .fa{
+  margin: 10px;
+}
+
+.card_info{
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #636DCE;
+  align-items: center;
+  background: #eeeeee;
+  color: #555555;
+
+}

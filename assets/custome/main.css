@@ -216,6 +216,7 @@ input[type="checkbox"]{
   border-radius: 9px;
   background:white;
   border: 1px white;
+  transition: 1s;
 
 }
 .container{
