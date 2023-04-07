@@ -187,9 +187,15 @@ margin: 50px 50px 0 50px;
 
 
 /* home header media */
-@media screen and (max-width:770px) {
+@media  screen and (max-width:660px) {
+
+  .main{
+    margin:0 5px 0 5px ;
+    padding: 0;
+  }
  .header{
   height: 150px;
+  width: 100%;
   display: block;
   position: fixed;
   background: rgb(198, 148, 245);
@@ -198,16 +204,16 @@ margin: 50px 50px 0 50px;
  .left-section{
   position: absolute;
   top:5%;
-  left: 25px;
+  left: 5px;
  }
 
  .middle-section{
   position: absolute;
-  left:50px;
+  left:8px;
   top:60px
  }
  .search-bar{
-  width: 350px;
+  width: 250px;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
  }
@@ -220,15 +226,17 @@ margin: 50px 50px 0 50px;
  .right-section{
   position: absolute;
   top:5%;
-  left: 510px;
+  left: 330px;
  }
 
  .categories{
-  margin: 50px 0px 0px 50px;
+  margin: 50px 0px 0px 0px;
+  height: 50px;
  }
 
- .category-img{
+ .category-img img{
   margin: auto;
+  height: 70px;
  }
 
  
@@ -358,17 +366,26 @@ transition: 1s;
 }
 
 /* topics media */
-@media screen and (max-width:770px) {
+@media screen and (max-width:660px) {
   .filters{
+    display: none;
     font-size: smaller;
     margin-top: 50px;
     column-gap: 1px;
   }
   .topic{
+    display: flex;
+    justify-content: space-around;
+    margin-top:70px;
     display: block;
-    height: 560px;
+    height: 595px;
     background-color: rgba(44, 61, 245, 0.402); ;
    
+  }
+  
+  .topic-texts{
+    margin: 5;
+    /* padding: 15px; */
   }
 
   .topic .topic-img img{
@@ -381,9 +398,10 @@ transition: 1s;
   }
 
   .topic .topic-start{
-  position: absolute;
-  margin-top:-10px;
-  left: 450px;
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    font-size: x-large;
   }
 
   .pagination{
