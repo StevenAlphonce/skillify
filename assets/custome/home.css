@@ -412,8 +412,6 @@ transition: 1s;
   }
 }
 
-
-
 .action{
   position:fixed;
   top: 20px;
@@ -423,8 +421,8 @@ transition: 1s;
   position: absolute;
   top: 50px;
   right: -10px;
-  padding: 10px 20px;
-  background-color:rgb(198, 148, 245);;
+  padding: 8px 5px;
+  background-color:rgb(198, 148, 245);
   width: 200px;
   box-sizing: 0 5px 25px rgb(0,0,0,0.1);
   border-radius: 15px;
